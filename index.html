@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BGS PROD</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+
+  <body class="cursor-none">
+    <main
+      id="main"
+      class="w-screen h-screen overflow-y-scroll overflow-x-hidden fixed"
+    >
+      <span
+        class="w-40 h-12.5 hidden justify-center items-center bg-white text-black fixed top-0 left-0 z-50"
+      ></span>
+      <!-- ********************************* START CURSOR ********************************* -->
+      <div
+        id="custome-cursor-parent"
+        class="w-7.5 h-7.5 fixed hidden border-[1.5px] border-solid border-white shadow-[0px_0px_10px_0px_black] rounded-[100%] z-50"
+      ></div>
+      <div
+        id="custome-cursor-child"
+        class="w-2 h-2 fixed hidden bg-white shadow-[0px_0px_10px_0px_black] rounded-[100%] transition-all duration-100 ease-out z-50"
+      ></div>
+      <!-- ********************************* END CURSOR ********************************* -->
+
+      <!-- ********************************* START HEADER ********************************* -->
+      <header
+        class="bg-[url(../images/bg.png)] overflow-hidden relative bg-center bg-cover w-screen h-screen z-10"
+      >
+        <!-- ******************************* CLOUDS ******************************* -->
+        <div id="clouds" class="w-full h-full absolute top-0 left-0 z-10">
+          <figure
+            id="cloud1-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[-20vw]"
+          >
+            <img src="./assets/images/cloud1.png" />
+          </figure>
+
+          <figure
+            id="cloud2-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[-25vw]"
+          >
+            <img src="./assets/images/cloud2.png" />
+          </figure>
+
+          <figure
+            id="cloud3-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[10vw]"
+          >
+            <img src="./assets/images/cloud3.png" />
+          </figure>
+
+          <figure
+            id="cloud4-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[-45vw]"
+          >
+            <img src="./assets/images/cloud4.png" />
+          </figure>
+
+          <figure
+            id="cloud5-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[-120vw]"
+          >
+            <img src="./assets/images/cloud1.png" />
+          </figure>
+
+          <figure
+            id="cloud6-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[-30vw]"
+          >
+            <img src="./assets/images/cloud5.png" />
+          </figure>
+
+          <figure
+            id="cloud7-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[40vw] translate-y-[10vh]"
+          >
+            <img src="./assets/images/cloud5.png" />
+          </figure>
+
+          <figure
+            id="cloud8-figure"
+            class="cloud-animate absolute top-0 left-0 translate-x-[80vw] translate-y-[-20vh]"
+          >
+            <img src="./assets/images/cloud5.png" />
+          </figure>
+        </div>
+        <!-- ******************************* MOUNTAINS ******************************* -->
+        <div id="mountains" class="w-full h-full absolute top-0 left-0">
+          <figure
+            id="mountain1-figure"
+            class="absolute bottom-0 right-0 xl:top-[-20%] z-0"
+          >
+            <img src="./assets/images/mountain1.png" />
+          </figure>
+
+          <figure
+            id="mountain2-figure"
+            class="absolute bottom-0 left-0 xl:top-[-20%] z-0"
+          >
+            <img src="./assets/images/mountain2.png" />
+          </figure>
+
+          <figure
+            id="mountain3-figure"
+            class="absolute bottom-0 left-0 xl:top-[-20%]"
+          >
+            <img src="./assets/images/mountain3.png" />
+          </figure>
+        </div>
+        <!-- ******************************* GRASS ******************************* -->
+        <div id="grass" class="w-full h-full absolute top-0 left-0">
+          <figure
+            id="grass1-figure"
+            class="absolute bottom-0 left-0 xl:top-[-20%]"
+          >
+            <img src="./assets/images/grass1.png" />
+          </figure>
+
+          <figure
+            id="grass1-figure"
+            class="absolute bottom-0 left-0 xl:top-[-20%]"
+          >
+            <img src="./assets/images/grass2.png" />
+          </figure>
+        </div>
+
+        <!-- ******************************* ROCKS ******************************* -->
+        <div
+          id="rocks"
+          class="w-full h-full absolute bottom-[-5%] md:bottom-[-10%] xl:bottom-[-15%] left-0 z-30"
+        >
+          <figure id="rocks1-figure" class="absolute bottom-0 left-0">
+            <img src="./assets/images/rocks1.png" />
+          </figure>
+
+          <figure id="rocks2-figure" class="absolute bottom-0 left-0">
+            <img src="./assets/images/rocks2.png" />
+          </figure>
+        </div>
+
+        <!-- ******************************* SUN ******************************* -->
+        <div id="sun" class="w-full h-full absolute top-0 left-0">
+          <figure id="sun-figure" class="absolute bottom-0 xl:top-[-20%]">
+            <img src="./assets/images/sun.png" />
+          </figure>
+        </div>
+
+        <!-- ******************************* ICON ******************************* -->
+        <div
+          id="icon"
+          class="w-[200%] left-[50%] -translate-x-1/2 sm:w-[150%] md:w-full absolute bottom-0 z-40"
+        >
+          <figure id="icon-figure" class="w-full h-full">
+            <img src="./assets/images/icon.png" />
+          </figure>
+        </div>
+      </header>
+      <!-- ********************************* END HEADER ********************************* -->
+
+      <!-- ********************************* START SEC1 ********************************* -->
+      <section
+        id="first-section"
+        class="w-screen h-screen bg-[#2f122e] relative z-30 font-BlackOpsOne"
+      >
+        <div
+          id="first-head-txt"
+          class="w-screen h-1/3 flex items-end justify-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#c69990]"
+        >
+          <p>PANIZ ASGHARI</p>
+        </div>
+        <div id="second-head-txt" class="w-screen h-2/3 flex flex-col">
+          <p
+            class="w-screen h-1/2 text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-end justify-center text-[#866496]"
+          >
+            WEB DEVELOPER
+          </p>
+          <p
+            class="w-screen h-1/2 text-5xl sm:text-6xl md:text-7xl lg:text-8xl flex items-center justify-center bg-[linear-gradient(180deg,#8a6391_20%,#956186_50%,#a36079_100%)] bg-clip-text text-transparent"
+          >
+            FREELANCER
+          </p>
+        </div>
+      </section>
+      <!-- ********************************* END SEC1 ********************************* -->
+
+      <!-- ********************************* START SEC2 ********************************* -->
+      <section
+        id="second-section"
+        class="w-screen h-[200vh] lg:h-screen bg-[linear-gradient(1deg,rgba(6,1,24,1)_15%,rgba(47,18,46,1)_85%)] font-oswald text-[#c69990]"
+      >
+        <div id="first-row-txt" class="w-screen h-2/3 flex flex-wrap">
+          <div
+            id="1st-col1"
+            class="w-screen h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-around text-[20px] px-5"
+          >
+            <p>
+              UX/UI Designer and Artistic Director based in Aix-en-Provence,
+              France.
+            </p>
+            <p>
+              Passionate about the design of User Interface, linking
+              interactivity and user experience. I had the privilege of working
+              with major brands, agencies and remarkable people for more than 20
+              years and thus be able to broaden my skills in different areas of
+              design, digital and print.
+            </p>
+          </div>
+
+          <div
+            id="1st-col2"
+            class="w-screen h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-around text-[20px] px-5 text-[#c69990]"
+          >
+            <div id="first-row-buttons" class="flex flex-col">
+              <p class="pb-2">Skills</p>
+              <div
+                id="skills-buttons"
+                class="w-full h-full flex flex-wrap uppercase"
+              >
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  art direction
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  ui
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  ux
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  webdesign
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  prototyping
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  brand identity
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  crm
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  2d animations
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  print
+                </div>
+              </div>
+            </div>
+            <div id="second-row-buttons" class="flex flex-col">
+              <p class="pb-2">Tools</p>
+              <div
+                id="Tools-buttons"
+                class="w-full h-full flex flex-wrap uppercase"
+              >
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  figma
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  adobe xd
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  illustrator
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  after effect
+                </div>
+                <div
+                  class="w-fit h-fit px-2 py-1 rounded-[5px] mr-5 mb-3 bg-[#531431] hover:bg-[#7b2154] transition-all duration[0.4s]"
+                >
+                  webflow
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="second-row-txt" class="w-screen h-1/3 flex flex-wrap italic">
+          <div
+            id="2nd-col1"
+            class="w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-around text-[16px] px-5"
+          >
+            <p>
+              I have known Jerome for over 20 years and the results have always
+              been top notch. A senior designer as we rarely see, and above all
+              very responsive.
+            </p>
+            <p class="flex flex-col">
+              <span>David Sitbon</span>
+              <span>CMO - Leia Inc.</span>
+            </p>
+          </div>
+          <div
+            id="2nd-col2"
+            class="w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-around text-[16px] px-5"
+          >
+            <p>
+              Jerome is a talented designer with whom I have been fortunate
+              enough to work for over 15 years now. Its ability to reinvent
+              itself in a constantly evolving universe, in order to follow new
+              trends, styles, or use new tools, will always continue to amaze
+              me. He's also an efficient and loyal person on who you can count
+              on, in all situation.
+            </p>
+            <p class="flex flex-col">
+              <span>Jean-Baptiste Bousquet</span>
+              <span>Founder & CEO - SEO Buddy</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ********************************* END SEC2 ********************************* -->
+
+      <!-- ********************************* START FOOTER ********************************* -->
+      <footer id="footer" class="w-screen h-[110vh] bg-[#060118] relative">
+        <figure
+          id="footer-figure"
+          class="w-full h-[90%] absolute bottom-0 left-[50%] -translate-x-1/2 z-0"
+        >
+          <img
+            src="./assets/images/footer.png"
+            class="w-full h-full object-cover"
+          />
+        </figure>
+
+        <div
+          id="footer-info"
+          class="w-full h-full flex flex-col justify-around items-center text-center absolute z-40 text-white font-oswald"
+        >
+          <div id="footer-div1">
+            <h3 class="text-4xl">Available for amazing projects!</h3>
+            <p class="text-3xl">Contact me and let's talk.</p>
+
+            <div
+              id="contact-button"
+              class="w-full h-50 grid place-items-center mt-5"
+            >
+              <div
+                id="contact-button-bg"
+                class="w-60 h-14.5 absolute z-10 col-start-1 row-start-1 bg-[#7b2154] rounded-full"
+              ></div>
+              <div
+                id="contact-button-real"
+                class="w-60 h-14.5 absolute z-20 col-start-1 row-start-1 bg-[#531431] text-[#c69990] font-bold rounded-full flex justify-center items-center"
+              >
+                CONTACT ME
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-div2" class="w-full">
+            <div
+              id="footer-icons"
+              class="w-full h-full flex justify-center items-center"
+            >
+              <ul
+                class="w-[60%] sm:w-[40%] lg:w-[25%] h-full flex items-center justify-between"
+              >
+                <li
+                  class="w-12.5 h-12.5 p-2.5 rounded-full flex justify-center items-center bg-[#531431] hover:bg-[#7b2154] transition-all duration-200 ease-linear"
+                >
+                  <img
+                    src="./assets/images/dribbble-brands-solid.png"
+                    alt="Dribble"
+                  />
+                </li>
+                <li
+                  class="w-12.5 h-12.5 p-2.5 rounded-full flex justify-center items-center bg-[#531431] hover:bg-[#7b2154] transition-all duration-200 ease-linear"
+                >
+                  <img
+                    src="./assets/images/linkedin-in-brands-solid.png"
+                    alt="Linkedin"
+                  />
+                </li>
+                <li
+                  class="w-12.5 h-12.5 p-2.5 rounded-full flex justify-center items-center bg-[#531431] hover:bg-[#7b2154] transition-all duration-200 ease-linear"
+                >
+                  <img
+                    src="./assets/images/facebook-f-brands-solid.png"
+                    alt="Facebook"
+                  />
+                </li>
+                <li
+                  class="w-12.5 h-12.5 p-2.5 rounded-full flex justify-center items-center bg-[#531431] hover:bg-[#7b2154] transition-all duration-200 ease-linear"
+                >
+                  <img
+                    src="./assets/images/behance-brands-solid.png"
+                    alt="Behance"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div id="footer-txt" class="w-full text-[#c69990]">
+              <span>Paniz Asghari - </span>
+              <span><a href="#" class="cursor-none hover:underline">www.bgsprod.com</a></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ********************************* END FOOTER ********************************* -->
+    </main>
+
+    <script src="./assets/js/master.js"></script>
+  </body>
+</html>
