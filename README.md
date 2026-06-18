@@ -1,5 +1,5 @@
 # parallax-BGSPROD
-live server: https://panizasghari-web.github.io/parallax-BGSPROD/
+Live Demo: https://panizasghari-web.github.io/parallax-BGSPROD/
 
 <img width="947" height="412" alt="1" src="https://github.com/user-attachments/assets/bbbfd080-6e18-404e-af7e-6b7d5daac472" />
 
@@ -9,4 +9,12 @@ live server: https://panizasghari-web.github.io/parallax-BGSPROD/
 
 <img width="947" height="411" alt="4" src="https://github.com/user-attachments/assets/4560c645-2419-4081-a280-c22858b519e7" />
 
+A modern and responsive Parallax website built with HTML, CSS, Tailwind and JavaScript.
 
+Features: Responsive design, Clean and modern UI, CSS and JS effects
+
+Technologies: HTML, CSS, Tailwind4, JavaScript
+
+Live Demo: https://panizasghari-web.github.io/parallax-BGSPROD/
+
+Author: Paniz Asghari
